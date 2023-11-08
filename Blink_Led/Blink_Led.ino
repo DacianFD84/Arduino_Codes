@@ -1,12 +1,12 @@
 // Blink_Led
 
 void setup() {
-  pinMode(13, OUTPUT); // Set pin 13 as an output
+  pinMode(2, OUTPUT); // Set pin 2 as an output
 }
 
 void loop() {
-  digitalWrite(13, HIGH); // Turn on the LED
+  digitalWrite(2, HIGH); // Turn on the LED
   delay(1000); // Wait for 1 second (1000 milliseconds)
-  digitalWrite(13, LOW); // Turn off the LED
+  digitalWrite(2, LOW); // Turn off the LED
   delay(1000); // Wait for 1 second (1000 milliseconds)
 }
