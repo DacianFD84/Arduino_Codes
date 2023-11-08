@@ -1,17 +1,17 @@
-const int ledPin = 2; // Pin number for the LED
+const int ledPin = 2; // Numărul pinului pentru LED
 
 void setup() {
-  pinMode(ledPin, OUTPUT); // Set the LED pin as an output
+  pinMode(ledPin, OUTPUT); // Setează pinul LED ca ieșire
 }
 
 void loop() {
-  // Blink pattern
+  // Model de clipire
   for (int i = 0; i < 3; i++) {
-    digitalWrite(ledPin, HIGH); // Turn on the LED
-    delay(500); // Wait for 0.5 seconds
-    digitalWrite(ledPin, LOW); // Turn off the LED
-    delay(500); // Wait for 0.5 seconds
+    digitalWrite(ledPin, HIGH); // Aprinde LED-ul
+    delay(500); // Așteaptă 0.5 secunde
+    digitalWrite(ledPin, LOW); // Stinge LED-ul
+    delay(500); // Așteaptă 0.5 secunde
   }
 
-  delay(2000); // Wait for 2 seconds before the next pattern
+  delay(2000); // Așteaptă 2 secunde înainte de următorul model
 }

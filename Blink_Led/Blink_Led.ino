@@ -1,12 +1,17 @@
 // Blink_Led
 
 void setup() {
-  pinMode(2, OUTPUT); // Set pin 2 as an output
+  // Seteaza pinul 2 ca iesire
+  pinMode(2, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(2, HIGH); // Turn on the LED
-  delay(1000); // Wait for 1 second (1000 milliseconds)
-  digitalWrite(2, LOW); // Turn off the LED
-  delay(1000); // Wait for 1 second (1000 milliseconds)
+  // Aprinde LED-ul
+  digitalWrite(2, HIGH);
+  // Asteapta 1 secunda (1000 milisecunde)
+  delay(1000);
+  // Stinge LED-ul
+  digitalWrite(2, LOW);
+  // Asteapta 1 secunda (1000 milisecunde)
+  delay(1000);
 }

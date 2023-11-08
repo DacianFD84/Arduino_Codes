@@ -1,13 +1,13 @@
-// Sets all digital pins from 2 to 13 as OUTPUT and HIGH in the setup() function. 
+// Setează toate piniile digitale de la 2 la 13 ca ieșire și HIGH în funcția setup().
 
 void setup() {
-  // Set all digital pins as OUTPUT and HIGH
+  // Setează toți piniile digitale ca ieșire și HIGH
   for (int pin = 2; pin <= 13; ++pin) {
-    pinMode(pin, OUTPUT);
-    digitalWrite(pin, HIGH);
+    pinMode(pin, OUTPUT); // Setează pinul ca ieșire
+    digitalWrite(pin, HIGH); // Setează pinul ca HIGH
   }
 }
 
 void loop() {
-  // No need for anything in the loop, pins will stay HIGH
+  // Nu este nevoie de nimic în bucla, piniile vor rămâne HIGH
 }
