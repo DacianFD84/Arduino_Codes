@@ -1,0 +1,25 @@
+### Numele Jocului: "Fade In Fade Out LED"
+
+#### Scopul Jocului:
+Scopul acestui joc Arduino este să creeze un efect vizual plăcut de fade in (creștere treptată a luminozității) și fade out (scădere treptată a luminozității) pentru un LED conectat la un pin specific al plăcii.
+
+#### Componente Joc:
+1. **LED:** Un singur LED conectat la pinul 2 al plăcii Arduino.
+
+#### Reguli:
+1. **Inițializare:** În funcția `setup()`, se setează pinul LED ca ieșire, pregătindu-l pentru a fi controlat de către cod.
+
+2. **Fade In:** În ciclul `for` din prima parte a funcției `loop()`, luminozitatea LED-ului crește treptat de la 0 la 255, oferind un efect de fade in. Delay-ul de 10 milisecunde între fiecare pas controlează viteza de creștere a luminozității.
+
+3. **Fade Out:** În al doilea ciclu `for`, luminozitatea LED-ului scade treptat de la 255 la 0, oferind un efect de fade out. Delay-ul de 10 milisecunde între fiecare pas controlează viteza de scădere a luminozității.
+
+4. **Repetare:** După ce se completează fade out, ciclul se reia, creând astfel o secvență continuă de fade in și fade out.
+
+#### Observații:
+- **Ajustabilitate Viteză:** Viteza de fade in și fade out poate fi ajustată prin modificarea valorii delay-ului (mai mare pentru o creștere/scădere mai lentă, mai mic pentru o creștere/scădere mai rapidă).
+
+- **Extensibilitate:** Puteți modifica codul pentru a controla mai multe LED-uri sau pentru a adăuga alte efecte vizuale.
+
+- **Interacțiune Pasivă:** Jocul rulează în mod continuu fără intervenția activă a jucătorului, oferind o experiență vizuală plăcută.
+
+Este un joc simplu, dar elegant, care utilizează funcția `analogWrite()` pentru a controla luminozitatea LED-ului și pentru a crea un efect vizual atrăgător de fade in și fade out.

@@ -1,0 +1,25 @@
+Acest joc Arduino creează un efect vizual simplu utilizând patru LED-uri conectate la pini specifici ai plăcii. Iată o descriere detaliată a codului:
+
+### Numele Jocului: "Secvența de LED-uri"
+
+#### Scopul Jocului:
+Scopul acestui joc simplu este să creeze o secvență repetitivă de aprindere și stingere a LED-urilor conectate la pini specifici ai plăcii Arduino. Acesta oferă un efect vizual atractiv și ciclic.
+
+#### Componente Joc:
+1. **LED-uri:** Patru LED-uri conectate la pinii 2, 3, 4 și 5 ai plăcii Arduino.
+
+#### Reguli:
+1. **Inițializare:** În funcția `setup()`, se configurează pinii 2, 3, 4 și 5 ca ieșiri, pregătindu-i pentru a fi controlați de către cod.
+
+2. **Ciclul LED-urilor:** Funcția `loop()` conține un ciclu care trece prin fiecare LED în secvență și îl aprinde și stinge alternativ.
+
+3. **Efectul Vizual:** LED-urile se aprind și se sting într-un ritm de un ciclu pe secundă, oferind un efect vizual plăcut și ciclic.
+
+#### Observații:
+- **Ritmul Ajustabil:** Pauzele de așteptare (`delay(1000)`) între aprindere și stingere pot fi ajustate pentru a modifica ritmul secvenței LED-urilor.
+
+- **Configurație Extensibilă:** Puteți adăuga mai multe LED-uri și extinde codul pentru a crea secvențe mai complexe sau pentru a include alte funcționalități.
+
+- **Interacțiune Pasivă:** Jocul rulează în mod continuu și nu necesită intervenția activă a jucătorului. Scopul principal este de a oferi un efect vizual atrăgător.
+
+Este un exemplu simplu de utilizare a LED-urilor pentru a crea un efect ciclic și poate fi un punct de plecare pentru proiecte mai complexe sau pentru a înțelege modul în care se controlează componentele într-un mediu Arduino.

@@ -1,0 +1,27 @@
+Acest joc Arduino combină elemente muzicale și luminoase pentru a crea o experiență interactivă. Iată o descriere a jocului:
+
+### Numele Jocului: "Melodie și Lumini"
+
+#### Scopul Jocului:
+Scopul acestui joc este să ofere o experiență distractivă, combinând redarea unei melodii pe un buzzer cu efectul de fade al LED-urilor în sincron cu nota muzicală.
+
+#### Componente Joc:
+1. **Buzzer:** Un dispozitiv care emite sunete în funcție de frecvențele specificate în codul Arduino. Redă melodia jocului.
+
+2. **LED-uri PWM:** LED-uri capabile să regleze luminozitatea utilizând modularea lățimii de impuls (PWM). Acestea vor crea un efect de fade în sincron cu melodia.
+
+#### Reguli:
+1. **Melodie "Happy Birthday":** Jocul redă melodia "Happy Birthday" pe buzzer utilizând o serie de note muzicale și durate.
+
+2. **Fade cu LED-uri:** În timpul redării melodiei, LED-urile se aprind și se sting cu un efect de fade pentru a crea o experiență vizuală plăcută și sincronizată cu sunetul.
+
+3. **Interacțiune Pasivă:** Jucătorul nu are un rol activ în joc și nu trebuie să furnizeze comenzi sau să facă alegeri. Jocul rulează într-un mod pasiv, oferind o experiență auditivă și vizuală.
+
+#### Observații:
+- **Personalizare Melodie:** Melodia "Happy Birthday" poate fi schimbată și personalizată prin modificarea notelor și duratelor în codul Arduino.
+  
+- **Ajustare Luminozitate:** Efectul de fade al LED-urilor poate fi ajustat prin modificarea valorilor în timpul fade-ului.
+
+- **Explorare și Înțelegere:** Jucătorii pot explora cum funcționează tonurile muzicale, duratele notelor și modul în care LED-urile reacționează în sincron cu melodia.
+
+Este un joc simplu și distractiv care combină elemente muzicale și luminoase pentru a crea o experiență interactivă și atrăgătoare.
