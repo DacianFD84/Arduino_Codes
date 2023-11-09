@@ -1,0 +1,15 @@
+Acest cod implementează un efect luminos numit "Knight Rider" (sau KITT - Knight Industries Two Thousand), care este cunoscut pentru mișcarea sa de scanare a luminilor de pe mașina KITT din serialul TV "Knight Rider". Iată o descriere detaliată a codului:
+
+1. `const int ledPins[] = {2, 3, 4, 5, 6, 7, 8, 9};`: Defineste un array de 8 pini care sunt conectați la LED-urile utilizate pentru a simula efectul "Knight Rider".
+
+2. `void setup()`: Funcția de configurare care rulează o singură dată la pornirea programului. Aici se setează toți piniile din array-ul `ledPins` ca ieșiri (OUTPUT) pentru a controla LED-urile.
+
+3. `void loop()`: Funcția principală care rulează în buclă continuă. Apelează funcția `knightRiderEffect(100)` pentru a afișa efectul "Knight Rider" cu o viteză dată (100 milisecunde între pași, în acest caz).
+
+4. `void knightRiderEffect(int speed)`: Funcția care implementează efectul "Knight Rider".
+
+   - `for (int i = 0; i < 8; i++) { ... }`: În această buclă, LED-urile se aprind secvențial de la stânga la dreapta cu o întârziere dată de `speed` între fiecare LED.
+
+   - `for (int i = 6; i > 0; i--) { ... }`: În această buclă inversă, LED-urile se aprind secvențial de la dreapta la stânga cu aceeași întârziere.
+
+Efectul "Knight Rider" este realizat prin aprinderea și stingerea succesivă a LED-urilor într-o direcție, creând astfel iluzia unei mișcări de scanare de-a lungul seriei de LED-uri. Viteza efectului poate fi ajustată prin modificarea parametrului `speed` în funcția `knightRiderEffect`. Un `speed` mai mic va face efectul să se miște mai rapid, în timp ce un `speed` mai mare îl va face să se miște mai lent.

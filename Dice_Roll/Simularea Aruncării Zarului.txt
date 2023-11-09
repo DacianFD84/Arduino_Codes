@@ -1,0 +1,20 @@
+Desigur! Jocul simulat de acest cod este o versiune simplificată a aruncării zarului. Aici este o descriere a jocului:
+
+### Numele Jocului: Simularea Aruncării Zarului
+
+#### Reguli:
+1. Jucătorul interacționează cu jocul prin intermediul Serial Monitor al Arduino.
+2. Jucătorul introduce comanda "dice" în Serial Monitor și apasă Enter.
+3. După ce primește comanda "dice", Arduino simulează aruncarea unui zar și generează un număr aleatoriu între 1 și 6.
+4. Numărul generat reprezintă rezultatul aruncării zarului.
+5. Pe baza rezultatului, Arduino aprinde LED-urile corespunzătoare numărului obținut pentru o perioadă de 3 secunde.
+6. După 3 secunde, LED-urile se sting, pregătindu-se pentru o nouă aruncare a zarului.
+
+#### Scopul Jocului:
+Scopul jocului este să simuleze senzația de aruncare a zarului, unde rezultatul este generat aleatoriu și LED-urile reprezintă vizual rezultatul obținut.
+
+#### Observații:
+- Jucătorul poate efectua aruncări repetate introducând comanda "dice" în Serial Monitor.
+- Rezultatele aruncărilor zarului sunt afișate în Serial Monitor, iar LED-urile ilustrează vizual numărul obținut.
+
+Este un proiect interactiv și distractiv, cu o componentă vizuală prin aprinderea LED-urilor, oferind o experiență simplă de joc utilizatorului.

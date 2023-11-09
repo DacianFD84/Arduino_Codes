@@ -1,0 +1,27 @@
+Acest joc simulat reprezintă o versiune simplificată a aruncării unei monede, cu un element interactiv utilizând un microcontroler Arduino și comunicarea serială. Iată o descriere a jocului:
+
+### Numele Jocului: Simularea Aruncării Monedei
+
+#### Scopul Jocului:
+Scopul jocului este să simuleze procesul de aruncare a unei monede și să afișeze rezultatul (față sau spate) în Serial Monitor al Arduino.
+
+#### Componente Joc:
+1. **LED pentru "Heads" (Față):** Un LED care reprezintă fața monedei și se aprinde atunci când rezultatul aruncării este "Heads".
+
+2. **LED pentru "Tails" (Spate):** Un LED care reprezintă spatele monedei și se aprinde atunci când rezultatul aruncării este "Tails".
+
+#### Reguli:
+1. **Comanda "flip":** Jucătorul introduce comanda "flip" în Serial Monitor și apasă Enter pentru a simula aruncarea monedei.
+  
+2. **Interval de Așteptare:** Pentru a adăuga un element de anticipare, jocul permite o aruncare la fiecare 3 secunde.
+
+3. **Rezultatul Aruncării:** LED-ul corespunzător rezultatului aruncării (Heads sau Tails) se aprinde, iar rezultatul este afișat în Serial Monitor.
+
+4. **Iluminare LED:** LED-urile pentru "Heads" și "Tails" se aprind alternativ în funcție de rezultatul aruncării, iar ambele LED-uri se sting după afișarea rezultatului.
+
+#### Observații:
+- Jucătorul poate repeta comanda "flip" pentru a efectua aruncări multiple.
+- Rezultatul aruncării monedei este generat aleatoriu la fiecare comandă "flip".
+- LED-urile oferă o ilustrare vizuală a rezultatului aruncării, iar Serial Monitor afișează textul "Heads" sau "Tails" pentru claritate.
+
+Este un joc simplu, dar interactiv, care adaugă un element de surpriză prin simulează aruncarea monedei și oferă un feedback vizual și textual utilizatorului.
