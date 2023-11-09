@@ -5,10 +5,14 @@ void setup() {
 
 void loop() {
   // 3 clipiri scurte
-  digitalWrite(13, HIGH); // aprinde LED-ul (HIGH este nivelul de tensiune)
-  delay(500); // așteaptă jumătate de secundă
-  digitalWrite(13, LOW); // stinge LED-ul prin scăderea tensiunii
-  delay(300); // pauză de 300 de milisecunde, aproximativ 1/3 dintr-o secundă
+  digitalWrite(13, HIGH); 
+  // aprinde LED-ul (HIGH este nivelul de tensiune)
+  delay(500); 
+  // așteaptă jumătate de secundă
+  digitalWrite(13, LOW); 
+  // stinge LED-ul prin scăderea tensiunii
+  delay(300); 
+  // pauză de 300 de milisecunde, aproximativ 1/3 dintr-o secundă
   digitalWrite(13, HIGH);   
   delay(500);              
   digitalWrite(13, LOW);    
