@@ -1,33 +1,33 @@
-const int SHORT = 200;
-const int LONG = 700;
-const int DELAY = 500;
-const int pin = 2;
+const int SHORT = 200;  // Durata unui punct (200 ms)
+const int LONG = 700;   // Durata unei linii (700 ms)
+const int DELAY = 500;  // Pauza între caractere (500 ms)
+const int pin = 2;     // Pinul pentru LED
 
-char text[200];
+char text[200];        // Textul introdus de utilizator
 
 void setup() {
-  pinMode(pin, OUTPUT);
-  Serial.begin(9600);
+  pinMode(pin, OUTPUT);  // Setează pinul ca ieșire
+  Serial.begin(9600);    // Inițializează comunicarea serială
 }
 
 void dot() {
-  digitalWrite(pin, HIGH);
-  delay(SHORT);
-  digitalWrite(pin, LOW);
-  delay(DELAY);
-  Serial.print(".");
+  digitalWrite(pin, HIGH);  // Aprinde LED-ul
+  delay(SHORT);              // Așteaptă durata unui punct
+  digitalWrite(pin, LOW);   // Stinge LED-ul
+  delay(DELAY);              // Așteaptă pauza între caractere
+  Serial.print(".");         // Afisează un punct
 }
 
 void dash() {
-  digitalWrite(pin, HIGH);
-  delay(LONG);
-  digitalWrite(pin, LOW);
-  delay(DELAY);
-  Serial.print("-");
+  digitalWrite(pin, HIGH);  // Aprinde LED-ul
+  delay(LONG);               // Așteaptă durata unei linii
+  digitalWrite(pin, LOW);   // Stinge LED-ul
+  delay(DELAY);              // Așteaptă pauza între caractere
+  Serial.print("-");         // Afisează o linie
 }
 
 void morse(char x) {
-  x = tolower(x);
+  x = tolower(x);            // Converteste caracterul la litera mica
 
   if (x == 'a') {
     dot();
@@ -139,30 +139,30 @@ void morse(char x) {
     dot();
   }
 
-  Serial.print(" ");
+  Serial.print(" ");         // Afisează un spațiu între caractere
 }
 
 void loop() {
   if (Serial.available() > 0) {
-    // Read the input from the Serial Monitor
+    // Citește textul introdus de utilizator din Monitorul Serial
     int i = 0;
     while (Serial.available() > 0) {
       text[i] = Serial.read();
       i++;
-      delay(10);  // Small delay for stability
+      delay(10);  // Mică întârziere pentru stabilitate
     }
-    text[i] = '\0';  // Null-terminate the array
+    text[i] = '\0';  // Termină șirul de caractere cu NULL
 
-    // Process the entered text
+    // Procesează textul introdus
     for (int j = 0; j < strlen(text); j++) {
       morse(text[j]);
       delay(500);
     }
 
-    // Clear the input buffer
+    // Golește bufferul de intrare
     while (Serial.available() > 0) {
       Serial.read();
     }
-    Serial.println();  // Print a new line for better readability
+    Serial.println();  // Afișează o linie nouă pentru o mai bună citire
   }
 }
