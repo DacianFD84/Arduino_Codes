@@ -1,3 +1,8 @@
+# Scriptul de Pull (pull.py):
+# Acest script este conceput pentru a aduce schimbările din repository-ul remote pe computerul local.
+# Utilizatorul introduce numele branch-ului, iar scriptul efectuează fetch pentru a aduce schimbările
+# de la repository-ul remote și merge cu branch-ul local specificat.
+
 import subprocess
 
 def git_command(command):

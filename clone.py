@@ -1,3 +1,8 @@
+# Scriptul de Clonare (clone.py):
+# Acest script oferă o modalitate simplificată de a clona un repository Git.
+# Utilizatorul introduce URL-ul repository-ului și, opțional, directorul în care să fie clonat.
+# Scriptul utilizează comanda git clone pentru a efectua clonarea.
+
 import subprocess
 
 def git_command(command):

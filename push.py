@@ -1,3 +1,8 @@
+# Scriptul de Inițializare și Push (push.py):
+# Acest script automatizează procesul de inițializare a unui repository Git local.
+# După adăugarea tuturor fișierelor în zona de staging, utilizatorul introduce un mesaj de commit și numele branch-ului.
+# Scriptul efectuează apoi comiterea și face push la branch-ul specificat către repository-ul remote (origin).
+
 import subprocess
 
 def git_command(command):
@@ -25,3 +30,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -1,3 +1,9 @@
+# Scriptul Complet (merged.py):
+# Acest script combină funcționalitățile celor trei scripturi menționate mai sus.
+# În plus față de funcționalitățile de clonare, inițializare, push și pull,
+# adaugă și o opțiune pentru utilizator de a decide dacă dorește să facă pull după push,
+# pentru a se asigura că lucrează cu cea mai recentă versiune a codului.
+
 import subprocess
 
 def git_command(command):
