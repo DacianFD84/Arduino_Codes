@@ -1,25 +1,26 @@
 import subprocess
 
 def git_command(command):
+    # Rulează comanda Git în shell
     subprocess.run(command, shell=True)
 
 def main():
-    # Initialize Git repository
+    # Initializează repository-ul Git
     git_command("git init")
 
-    # Add all files to the staging area
+    # Adaugă toate fișierele în zona de staging
     git_command("git add .")
 
-    # Get user input for commit message
-    commit_message = input("Enter your commit message: ")
+    # Obține mesajul de commit de la utilizator
+    commit_message = input("Introduceți mesajul de commit: ")
 
-    # Commit changes
+    # Comite schimbările
     git_command(f'git commit -m "{commit_message}"')
 
-    # Get user input for branch name
-    branch_name = input("Enter the branch name (e.g., main, master): ")
+    # Obține numele branch-ului de la utilizator
+    branch_name = input("Introduceți numele branch-ului (de exemplu, main, master): ")
 
-    # Set upstream and push to the specified branch
+    # Setează upstream și trimite pe branch-ul specificat
     git_command(f'git push -u origin {branch_name}')
 
 if __name__ == "__main__":
