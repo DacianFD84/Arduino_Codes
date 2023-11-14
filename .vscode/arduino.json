@@ -1,5 +1,5 @@
 {
-    "sketch": "Led_Blink_Pattern\\Led_Blink_Pattern.ino",
-    "board": "arduino:renesas_uno:unor4wifi",
-    "port": "COM17"
+    "sketch": "Lottery_Generator_6-49\\Lottery_Generator_6-49.ino",
+    "board": "arduino:avr:uno",
+    "port": "COM19"
 }

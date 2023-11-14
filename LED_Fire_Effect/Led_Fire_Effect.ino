@@ -2,7 +2,7 @@
 
 int ledPin1 = 2;
 int ledPin2 = 3;
-int ledPin3 = 4;
+int ledPin3 = 13;
 
 void setup()
 {
