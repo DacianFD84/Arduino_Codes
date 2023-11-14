@@ -1,0 +1,5 @@
+{
+    "sketch": "Led_Blink_Pattern\\Led_Blink_Pattern.ino",
+    "board": "arduino:renesas_uno:unor4wifi",
+    "port": "COM17"
+}
